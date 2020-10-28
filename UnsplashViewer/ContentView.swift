@@ -33,10 +33,19 @@ class DataSource: ObservableObject {
 
 struct DetailView: View {
     var selectedImage: String
+    @State var hidesNavigationBar = false
     
     var body: some View {
         let img = UIImage(named: selectedImage)!
         Image(uiImage: img)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .navigationBarTitle(Text(selectedImage), displayMode: .inline)
+            .navigationBarHidden(hidesNavigationBar)
+            .onTapGesture(count: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/, perform: {
+                // Image was tapped once
+                self.hidesNavigationBar.toggle()
+            })
     }
 }
 
