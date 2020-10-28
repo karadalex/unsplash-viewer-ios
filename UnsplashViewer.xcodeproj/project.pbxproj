@@ -19,6 +19,7 @@
 		8B6E0C4D2549A36800FB9CF1 /* clement-h-95YRwf6CNw8-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B6E0C492549A36800FB9CF1 /* clement-h-95YRwf6CNw8-unsplash.jpg */; };
 		8B6E0C4E2549A36800FB9CF1 /* diego-ph-fIq0tET6llw-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B6E0C4A2549A36800FB9CF1 /* diego-ph-fIq0tET6llw-unsplash.jpg */; };
 		8B6E0C4F2549A36800FB9CF1 /* emile-perron-xrVDYZRGdw4-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B6E0C4B2549A36800FB9CF1 /* emile-perron-xrVDYZRGdw4-unsplash.jpg */; };
+		8B6E0C542549BDC000FB9CF1 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E0C532549BDC000FB9CF1 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		8B6E0C492549A36800FB9CF1 /* clement-h-95YRwf6CNw8-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "clement-h-95YRwf6CNw8-unsplash.jpg"; sourceTree = "<group>"; };
 		8B6E0C4A2549A36800FB9CF1 /* diego-ph-fIq0tET6llw-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "diego-ph-fIq0tET6llw-unsplash.jpg"; sourceTree = "<group>"; };
 		8B6E0C4B2549A36800FB9CF1 /* emile-perron-xrVDYZRGdw4-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "emile-perron-xrVDYZRGdw4-unsplash.jpg"; sourceTree = "<group>"; };
+		8B6E0C532549BDC000FB9CF1 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		8B6E0C352549A08200FB9CF1 /* UnsplashViewerUITests */ = {
 			isa = PBXGroup;
 			children = (
+				8B6E0C532549BDC000FB9CF1 /* SnapshotHelper.swift */,
 				8B6E0C362549A08200FB9CF1 /* UnsplashViewerUITests.swift */,
 				8B6E0C382549A08200FB9CF1 /* Info.plist */,
 			);
@@ -309,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B6E0C372549A08200FB9CF1 /* UnsplashViewerUITests.swift in Sources */,
+				8B6E0C542549BDC000FB9CF1 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
