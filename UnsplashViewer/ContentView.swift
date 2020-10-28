@@ -30,14 +30,29 @@ class DataSource: ObservableObject {
     }
 }
 
+
+struct DetailView: View {
+    var selectedImage: String
+    
+    var body: some View {
+        let img = UIImage(named: selectedImage)!
+        Image(uiImage: img)
+    }
+}
+
+
 struct ContentView: View {
     @ObservedObject var dataSource = DataSource()
     
     var body: some View {
         NavigationView {
             List(dataSource.pictures, id: \.self) { picture in
-                Text(picture)
-                    .padding()
+                NavigationLink(
+                    destination: DetailView(selectedImage: picture),
+                    label: {
+                        Text(picture)
+                            .padding()
+                    })
             }.navigationTitle(Text("Unsplash Viewer"))
         }
     }
