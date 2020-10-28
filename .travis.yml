@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode12
+install:
+  - brew install libpng jpeg imagemagick
+  - bundle install
+script:
+  - fastlane snapshot
+  - fastlane frameit
